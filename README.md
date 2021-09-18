@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/NazimAitali/time-tracking-dashboard.git
-- Live Site URL: https://time-tracking-dashboard.netlify.app/
+- Live Site URL: https://time-tracking-dashboard-live.netlify.app
 
 ## My process
 
