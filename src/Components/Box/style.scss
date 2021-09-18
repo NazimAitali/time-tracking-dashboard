@@ -1,0 +1,242 @@
+@import "../../Styles/libs/mixin.scss";
+@import "../../Styles/libs/Variable.scss";
+%transition {
+  transition: all 0.3s ease-in;
+}
+.Box-container {
+  @include dimension(100, 100);
+  @include flex(flex, flex-end, center, row);
+  align-self: center;
+  justify-self: center;
+}
+.Box-content {
+  @include dimension(90, 90);
+  @include flex(flex, center, flex-end, row);
+  background-color: aqua;
+  @include radius(15px);
+}
+.Work {
+  @include back(
+    $Primary-orange,
+    url(../../img/icon-work.svg),
+    no-repeat,
+    90%,
+    -7%,
+    30%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -15%;
+  }
+}
+.Play {
+  @include back(
+    $Primary-Soft-blue,
+    url(../../img/icon-play.svg),
+    no-repeat,
+    90%,
+    -6%,
+    30%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -20%;
+  }
+}
+.Study {
+  @include back(
+    $Primary-Light-red,
+    url(../../img/icon-study.svg),
+    no-repeat,
+    90%,
+    -8%,
+    30%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -20%;
+  }
+}
+.Exercise {
+  @include back(
+    $Primary-Lime-green,
+    url(../../img/icon-exercise.svg),
+    no-repeat,
+    92%,
+    0%,
+    30%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -8%;
+  }
+}
+.Social {
+  @include back(
+    $Primary-Violet,
+    url(../../img/icon-social.svg),
+    no-repeat,
+    94%,
+    -2%,
+    30%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -20%;
+  }
+}
+.Self {
+  @include back(
+    $Primary-Soft-orange,
+    url(../../img/icon-self-care.svg),
+    no-repeat,
+    93%,
+    -8%,
+    27%
+  );
+  @extend %transition;
+  &:hover {
+    background-position-y: -20%;
+  }
+}
+
+.Item-1 {
+  @include gird(2, 2, 1, 2);
+}
+.Item-2 {
+  @include gird(3, 3, 1, 2);
+}
+.Item-3 {
+  @include gird(4, 4, 1, 2);
+}
+.Item-4 {
+  @include gird(2, 2, 2, 2);
+}
+.Item-5 {
+  @include gird(3, 3, 2, 3);
+}
+.Item-6 {
+  @include gird(4, 4, 2, 3);
+}
+.Box-cover {
+  @include dimension(100, 80);
+  @include flex(flex, center, center, row);
+  background-color: $Neurtal-Dark-blue;
+  @include radius(13px);
+  &:hover {
+    background-color: $Neurtal-Dark-hover;
+    cursor: pointer;
+  }
+}
+.Box-cover-content {
+  @include dimension(80, 88);
+  @include flex(flex, space-evenly, center, column);
+}
+.Box-title-content {
+  @include dimension(100, 25);
+  @include flex(flex, space-between, center, row);
+}
+.Box-title {
+  @include dimension(50, 100);
+  @include flex(flex, flex-start, center, row);
+  font-weight: 400;
+  font-size: $Small-Font;
+}
+.More {
+  @include dimension(50, 100);
+  @include flex(flex, flex-end, center, row);
+  color: $Neurtal-Desaturated-blue;
+  font-weight: 400;
+  font-size: $Small-Font;
+  &:hover {
+    color: white;
+  }
+}
+.Point {
+  height: 100%;
+  font-weight: 400;
+  @include flex(flex, center, center, row);
+  position: relative;
+  left: 0px;
+}
+.Box-cover:hover > .Box-cover-content > .Box-title-content > .More > .Point {
+  @extend %transition;
+  margin-left: 1px;
+}
+.Box-time-content {
+  @include dimension(100, 75);
+  @include flex(flex, space-evenly, flex-start, column);
+}
+.Hours {
+  font-size: $Large-Font;
+  font-weight: 300;
+}
+.Moments {
+  color: $Neurtal-Desaturated-blue;
+  font-size: $XSmall-Font;
+  font-weight: 300;
+}
+@media only screen and (max-width: $Screen-Mobile){
+  
+  .Box-container {
+    justify-content: center;
+  }
+  .Box-content {
+    height: 80%;
+  }
+  .Box-title, .More  {
+    align-items: flex-end;
+    font-size: $Medium-Font-Mobile;
+  }
+  .Box-time-content {
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .Hours {
+    font-size: $XLarge-Font-Mobile;
+  }
+  .Moments {
+    font-size: $Small-Font-Mobile;
+  }
+  .Box-title-content {
+    height: 35%;
+    justify-content: center;
+  }
+  .Work {
+    background-size: 20%;
+  }
+  .Play {
+    background-position-y: -7%;
+    background-size: 20%;
+  }
+  .Study {
+    background-size: 20%;
+  }
+  .Exercise {
+    background-size: 20%;
+  }
+  .Social {
+    background-size: 20%;
+  }
+
+  .Item-1 {
+    @include gird(1, 1, 3, 5);
+  }
+  .Item-2 {
+    @include gird(1, 1, 5, 7);
+  }
+  .Item-3 {
+    @include gird(1, 1, 7, 9);
+  }
+  .Item-4 {
+    @include gird(1, 1, 9, 11);
+  }
+  .Item-5 {
+    @include gird(1, 1, 11, 13);
+  }
+  .Item-6 {
+    @include gird(1, 1, 13, 15);
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../Styles/libs/mixin.scss";
+@import "../../Styles/libs/Variable.scss";
+.Card-content {
+  @include dimension(80, 95);
+  @include flex(flex, unset, center, column);
+  background-color: aqua;
+  @include radius(15px);
+}
+.Info {
+  background-color: $Neurtal-Dark-blue;
+}
+.Card-cover {
+  @include dimension(100, 70);
+  @include flex(flex, center, center, row);
+  background-color: $Neutral-Violet;
+  @include radius(13px);
+}
+.Card-content-container {
+  @include dimension(80, 80);
+  @include flex(flex, space-evenly, flex-start, column);
+}
+.Title-content {
+  @include dimension(100, 100);
+  @include flex(flex, center, flex-start, column);
+  text-align: justify;
+}
+.img {
+  width: 44%;
+  border: solid white 2px;
+  @include radius(50px);
+}
+.Card-title {
+  font-size: $XSmall-Font;
+  color: $Neurtal-Pale-Blue;
+  font-weight: 300;
+}
+.Name {
+  font-size: $Medium-Font;
+  font-weight: 300;
+}
+.Menu-container {
+  @include dimension(70, 30);
+  @include flex(flex, center, center, row);
+}
+.Menu {
+  @include dimension(100, 100);
+  @include flex(flex, space-evenly, flex-start, column);
+}
+.Menu li {
+  font-size: $XSmall-Font;
+  color: $Neurtal-Desaturated-blue;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+.Selected {
+  color: white !important;
+}
+@media only screen and (max-width: $Screen-Mobile) {
+  .Card-cover {
+    @include dimension(100, 65);
+  }
+  .Card-content {
+    width: 90%;
+  }
+  .Card-content-container {
+    width: 90%;
+    align-items: center;
+    flex-direction: row;
+  }
+  .Title-content {
+    width: 55%;
+  }
+  .img {
+    width: 25%;
+  }
+
+  .Card-title {
+    font-size: $XSmall-Font-Mobile;
+  }
+  .Name {
+    font-size: $Large-Font-Mobile;
+  }
+  .Menu-container {
+    @include dimension(100, 35);
+  }
+  .Menu {
+    align-items: center;
+    flex-direction: row;
+  }
+  .Menu li {
+    font-size: $Small-Font-Mobile;
+  }
+}

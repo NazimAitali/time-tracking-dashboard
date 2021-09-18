@@ -1,0 +1,35 @@
+/*****COLORS*****/
+/*****PRIMARY*****/
+$Primary-Blue: hsl(246, 80%, 60%);
+$Primary-orange: hsl(15, 100%, 70%); //work
+$Primary-Soft-blue: hsl(195, 74%, 62%); //play
+$Primary-Light-red: hsl(348, 100%, 68%); //study
+$Primary-Lime-green: hsl(145, 58%, 55%); //exercise
+$Primary-Violet: hsl(264, 64%, 52%); //social
+$Primary-Soft-orange: hsl(43, 84%, 65%); //self-care
+/*****NEUTRAL*****/
+$Neurtal-Very-dark-blue: hsl(226, 43%, 10%);
+$Neurtal-Dark-blue: hsl(235, 46%, 20%);
+$Neurtal-Dark-hover: hsl(235, 39%, 24%);
+$Neurtal-Desaturated-blue: hsl(235, 45%, 61%);
+$Neurtal-Pale-Blue: hsl(236, 100%, 87%);
+$Neurtal-Text-color: hsl(0, 0%, 100%);
+$Neutral-Violet: hsl(246, 79%, 59%);
+/*****FONT*****/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+$Rubik: "Rubik", sans-serif;
+$Title-font: 18px;
+/*****FONT-SIZE-SCREEN****/
+$XSmall-Font: calc(0.1 * 10vmax);
+$Small-Font: calc(0.13 * 10vmax);
+$Medium-Font: calc(0.2 * 10vmax);
+$Large-Font: calc(0.33 * 10vmax);
+/*****FONT-SIZE-MOBILE****/
+$XSmall-Font-Mobile: calc(0.3 * 10vmin);
+$Small-Font-Mobile: calc(0.4 * 10vmin);
+$Medium-Font-Mobile: calc(0.5 * 10vmin);
+$Large-Font-Mobile: calc(0.6 * 10vmin);
+$XLarge-Font-Mobile: calc(0.9 * 10vmin);
+/*****SCREEN*****/
+$Screen-Mobile: 600px;
+$Screen-Desktop: 1440px;
