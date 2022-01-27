@@ -25,10 +25,8 @@ Users should be able to:
 - Switch between viewing Daily, Weekly, and Monthly stats
 
 ### Screenshot
-
-(./screenshot-Desktop.jpg)
-(./screenshot-Mobile.jpg)
-
+![](https://github.com/NazimAitali/time-tracking-dashboard/blob/master/screenshot-Desktop.png)
+![](https://github.com/NazimAitali/time-tracking-dashboard/blob/master/screenshot-Mobile.png)
 ### Links
 
 - Solution URL: https://github.com/NazimAitali/time-tracking-dashboard.git
